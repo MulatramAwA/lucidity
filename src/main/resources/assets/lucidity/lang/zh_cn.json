@@ -1,4 +1,19 @@
 {
+  "command.lucidity.main_render": "爆炸可视化: 主渲染 -> %s",
+  "command.lucidity.entity_damage_render": "爆炸可视化: 实体伤害渲染 -> %s",
+  "command.lucidity.entity_ray_cast": "爆炸可视化: 实体伤害射线/采样点渲染 -> %s",
+  "command.lucidity.block_destruction_render": "爆炸可视化: 方块破坏渲染 -> %s",
+  "command.lucidity.block_detection_ray_render": "爆炸可视化: 方块检测射线渲染 -> %s",
+  "command.lucidity.block_damage_ray_range_updated": "爆炸可视化: 方块检测射线渲染范围已更新。",
+  "command.lucidity.block_damage_ray_layer_updated": "爆炸可视化: 方块检测射线渲染层已更新。",
+  "command.lucidity.block_detection_ray_settings_reset": "爆炸可视化: 方块检测射线渲染设置已重置！",
+  "command.lucidity.block_detection_ray_layer_reset": "爆炸可视化: 方块检测射线渲染层已重置！",
+  "command.lucidity.block_detection_ray_range_reset": "爆炸可视化: 方块检测射线渲染范围已重置！",
+  "command.lucidity.fake_explosion_add": "爆炸可视化: 添加了假爆炸: %s 于 %s，威力为 %s",
+  "command.lucidity.fake_explosion_duplicate": "爆炸可视化: 无法添加假爆炸 %s 于 %s: 名称重复！",
+  "command.lucidity.fake_explosion_remove": "爆炸可视化: 移除了假爆炸: %s",
+  "command.lucidity.fake_explosion_clear": "爆炸可视化: 已清除所有假爆炸",
+  
   "config.lucidity.title":"澄明视界",
 
   "config.lucidity.category.oreHighlight": "矿物高亮",
@@ -60,5 +75,97 @@
   "config.lucidity.wand.apply_to_entities": "手杖选择应用于实体",
   "config.lucidity.wand.apply_to_particles": "手杖选择应用于粒子",
 
-  "config.lucidity.wand.how_to_use": "\n左键点击:选择区域角点\n右键点击:选择单种方块。\nctrl+左键点击:添加选区，shift+左键点击:可以删除未完成的选区\nctrl+跳跃:切换方块渲染模式"
+  "config.lucidity.wand.how_to_use": "\n左键点击:选择区域角点\n右键点击:选择单种方块。\nctrl+左键点击:添加选区，shift+左键点击:可以删除未完成的选区\nctrl+跳跃:切换方块渲染模式",
+  "config.lucidity.title.explosion_visualizer": "爆炸可视化",
+  "config.lucidity.category.explosion_visualizer": "爆炸可视化",
+  "config.lucidity.group.renders": "渲染设置",
+  "config.lucidity.description.main_features": "功能",
+
+  "config.lucidity.option.main_render": "主渲染",
+  "config.lucidity.option.description.main_render": "主渲染，首先确保启用！",
+
+  "config.lucidity.option.block_destruction": "方块破坏",
+  "config.lucidity.option.description.block_destruction": "渲染将被爆炸破坏的方块。",
+
+  "config.lucidity.option.block_detection_ray": "方块检测射线",
+  "config.lucidity.option.description.block_detection_ray": "渲染用于检测爆炸破坏方块的检测射线。",
+
+  "config.lucidity.option.sample_points": "采样点",
+  "config.lucidity.option.description.sample_points": "渲染范围内的实体采样点，用于爆炸中的射线投射。",
+
+  "config.lucidity.option.explosion_damage": "爆炸伤害",
+  "config.lucidity.option.description.explosion_damage": "渲染范围内实体的爆炸伤害。",
+
+  "config.lucidity.title.settings": "设置",
+  "config.lucidity.category.settings": "设置",
+
+  "config.lucidity.group.block_detection_ray_settings": "方块检测射线设置",
+  "config.lucidity.description.block_detection_ray_settings": "在Minecraft中，1532条射线从爆炸中心向外发射，覆盖16x16x16的体素网格的最外层。\n(详情见\" https://minecraft.fandom.com/wiki/Explosion\").\n\n同时显示所有射线可能会显得非常混乱。此命令允许您分层查看这些射线。",
+
+  "config.lucidity.option.x_min": "X-最小值",
+  "config.lucidity.option.description.x_min": "(0~16)",
+
+  "config.lucidity.option.x_max": "X-最大值",
+  "config.lucidity.option.description.x_max": "(0~16)",
+
+  "config.lucidity.option.y_min": "Y-最小值",
+  "config.lucidity.option.description.y_min": "(0~16)",
+
+  "config.lucidity.option.y_max": "Y-最大值",
+  "config.lucidity.option.description.y_max": "(0~16)",
+
+  "config.lucidity.option.z_min": "Z-最小值",
+  "config.lucidity.option.description.z_min": "(0~16)",
+
+  "config.lucidity.option.z_max": "Z-最大值",
+  "config.lucidity.option.description.z_max": "(0~16)",
+
+  "config.lucidity.option.invert": "反转",
+  "config.lucidity.option.description.invert": "反转渲染范围。",
+
+  "config.lucidity.option.layer_min": "最小层",
+  "config.lucidity.option.description.layer_min": "最小渲染层",
+
+  "config.lucidity.option.layer_max": "最大层",
+  "config.lucidity.option.description.layer_max": "最大渲染层",
+
+  "config.lucidity.option.block_detection_ray_icon": "方块检测射线渲染图标",
+  "config.lucidity.option.description.block_detection_ray_icon": "方块检测射线的图标文本",
+
+  "config.lucidity.option.block_detection_ray_icon_size": "方块检测射线渲染图标大小",
+  "config.lucidity.option.description.block_detection_ray_icon_size": "方块检测射线的图标大小",
+
+  "config.lucidity.option.render_with_alpha": "使用透明度渲染",
+  "config.lucidity.option.description.render_with_alpha": "根据射线的透明度渲染爆炸威力。",
+
+  "config.lucidity.option.block_destruction_render_settings": "方块破坏渲染设置",
+
+  "config.lucidity.option.block_destruction_render_color": "方块破坏渲染颜色",
+  "config.lucidity.option.description.block_destruction_render_color": "爆炸将破坏的方块图标的颜色",
+
+  "config.lucidity.option.block_destruction_render_icon": "方块破坏渲染图标",
+  "config.lucidity.option.description.block_destruction_render_icon": "爆炸将破坏的方块的图标文本",
+
+  "config.lucidity.option.block_destruction_render_icon_size": "方块破坏渲染图标大小",
+  "config.lucidity.option.description.block_destruction_render_icon_size": "爆炸将破坏的方块的图标大小",
+
+  "config.lucidity.option.entity_sample_point_render_settings": "实体采样点渲染设置",
+
+  "config.lucidity.option.entity_sample_point_safe_color": "实体采样点(安全)渲染颜色",
+
+  "config.lucidity.option.entity_sample_point_safe_icon": "实体采样点(安全)渲染图标",
+
+  "config.lucidity.option.entity_sample_point_danger_color": "实体采样点(危险)渲染颜色",
+
+  "config.lucidity.option.entity_sample_point_danger_icon": "实体采样点(危险)渲染图标",
+
+  "config.lucidity.option.entity_sample_point_blocked_color": "实体采样点(被阻挡位置)渲染颜色",
+
+  "config.lucidity.option.entity_sample_point_blocked_icon": "实体采样点(被阻挡位置)渲染图标",
+
+  "config.lucidity.option.entity_sample_point_icon_size": "实体采样点(安全)图标大小",
+  "config.lucidity.option.description.entity_sample_point_icon_size": "爆炸将破坏的方块的图标大小",
+
+  "config.lucidity.option.see_Throw": "透視",
+  "config.lucidity.option.description.see_Throw": "渲染於一切之上，在牆後仍然可見"
 }
